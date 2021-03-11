@@ -18,8 +18,8 @@ get_header();
 
   <main id="primary" class="site-main">
 
-    <div class="home-banner" data-flickity='{ "wrapAround": true, "contain": true }'>
-    <!-- <div class="home-banner" data-flickity='{ "wrapAround": true, "contain": true, "prevNextButtons": false, "pageDots": false }'> -->
+    <!-- <div class="home-banner" data-flickity='{ "wrapAround": true, "contain": true }'> -->
+    <div class="home-banner" data-flickity='{ "wrapAround": true, "contain": true, "prevNextButtons": false, "pageDots": false }'>
 
      <?php 
         $args = array( 
@@ -52,12 +52,14 @@ get_header();
           echo '<p class="banner-item-cat">';
           $terms = get_the_terms($post->ID, 'category' );
           foreach ($terms as $term) {
-            echo '<span">'.$term_name = $term->name.'</span>';
+            echo '<span>'.$term_name = $term->name.'</span>';
           }
           echo '</p>';
 
           // get excerpt
           echo the_excerpt( '<p>', '</p>' );
+
+          echo '<a href="' . get_permalink( get_the_ID() ) . '" class="banner-item-text-link">See what we did ></a>';
 
           // grab the url for the featured image and link to post 
           $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
@@ -80,7 +82,7 @@ get_header();
               { echo get_field('contact_form_block_content'); } ?>
 
             <?php if(get_field('contact_form_block_image'))
-              { echo '<img src="' . get_field('contact_form_block_image') . '" alt="Card image">'; }?>
+              { echo '<img class="your-project-block" src="' . get_field('contact_form_block_image') . '" alt="Card image">'; }?>
           </div>
         </div>
       </div>

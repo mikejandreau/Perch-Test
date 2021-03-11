@@ -16,11 +16,7 @@ get_header();
 
 			<div class="col-md-12 col-lg-10">
 				<main id="primary" class="site-main">
-
-<div style="background-color:<?php the_field('background_color'); ?>">
-test
-</div>
-
+					
 					<?php
 						while ( have_posts() ) : the_post();
 						get_template_part( 'template-parts/content', get_post_type() );
