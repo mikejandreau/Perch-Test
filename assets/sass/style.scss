@@ -17,6 +17,204 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 
 
+
+
+
+
+
+
+
+
+
+
+// FONT FAMILIES
+// Font files are located in assets/fonts, currently choose from the fonst listed below. 
+// Only un-comment what you need to keep your CSS light
+
+// Montserrat (sans-serif)
+// Roboto (sans-serif)
+// Roboto Slab (serif)
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+
+
+// Sans-serif
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+// @font-face {
+//     font-family: 'montserratblack';
+//     src: url('assets/fonts/montserrat-black.woff2') format('woff2'),
+//          url('assets/fonts/montserrat-black.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'montserratextrabold';
+//     src: url('assets/fonts/montserrat-extrabold.woff2') format('woff2'),
+//          url('assets/fonts/montserrat-extrabold.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'montserratbold';
+//     src: url('assets/fonts/montserrat-bold.woff2') format('woff2'),
+//          url('assets/fonts/montserrat-bold.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'montserratsemibold';
+//     src: url('assets/fonts/montserrat-semibold.woff2') format('woff2'),
+//          url('assets/fonts/montserrat-semibold.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'montserratmedium';
+//     src: url('assets/fonts/montserrat-medium.woff2') format('woff2'),
+//          url('assets/fonts/montserrat-medium.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'montserratregular';
+//     src: url('assets/fonts/montserrat-regular.woff2') format('woff2'),
+//          url('assets/fonts/montserrat-regular.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+@font-face {
+    font-family: 'montserratlight';
+    src: url('assets/fonts/montserrat-light.woff2') format('woff2'),
+         url('assets/fonts/montserrat-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// @font-face {
+//     font-family: 'montserratextralight';
+//     src: url('assets/fonts/montserrat-extralight.woff2') format('woff2'),
+//          url('assets/fonts/montserrat-extralight.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'montserratthin';
+//     src: url('assets/fonts/montserrat-thin.woff2') format('woff2'),
+//          url('assets/fonts/montserrat-thin.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'latoblack';
+    src: url('assets/fonts/lato-black-webfont.woff2') format('woff2'),
+         url('assets/fonts/lato-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// @font-face {
+//     font-family: 'robotoblack_italic';
+//     src: url('assets/fonts/roboto-blackitalic.woff2') format('woff2'),
+//          url('assets/fonts/roboto-blackitalic.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'robotobold';
+//     src: url('assets/fonts/roboto-bold.woff2') format('woff2'),
+//          url('assets/fonts/roboto-bold.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'robotobold_italic';
+//     src: url('assets/fonts/roboto-bolditalic.woff2') format('woff2'),
+//          url('assets/fonts/roboto-bolditalic.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'robotoregular';
+//     src: url('assets/fonts/roboto-regular.woff2') format('woff2'),
+//          url('assets/fonts/roboto-regular.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'robotoitalic';
+//     src: url('assets/fonts/roboto-italic.woff2') format('woff2'),
+//          url('assets/fonts/roboto-italic.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'robotolight';
+//     src: url('assets/fonts/roboto-light.woff2') format('woff2'),
+//          url('assets/fonts/roboto-light.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'robotolight_italic';
+//     src: url('assets/fonts/roboto-lightitalic.woff2') format('woff2'),
+//          url('assets/fonts/roboto-lightitalic.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+
+
+
+
+
+// stylelint-disable value-keyword-case
+$font__main: 'latoblack', sans-serif;
+// stylelint-enable value-keyword-case
+$font__code: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__pre: "Courier 10 Pitch", courier, monospace;
+$font__line-height-body: 1.5;
+$font__line-height-pre: 1.6;
+
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+  // color: $color__text-main;
+  font-family: $font__main;
+  font-size: 1rem;
+  line-height: $font__line-height-body;
+}
+
+
+
+
+
+
 // colors 
 $pink: #ee4d73;
 $darkblue: #1282c5;
